@@ -375,13 +375,33 @@
         background-position: center;
     }
 
+    .uslugi-list-item:nth-child(4) .usligi_img {
+        width: 44px;
+        height: 40px;
+        background: url('../img/uslugi/Frame_604_4.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .uslugi-list-item:nth-child(5) .usligi_img {
+        width: 44px;
+        height: 40px;
+        background: url('../img/uslugi/Frame_604_5.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
     .uslugi-list-item:nth-child(1) .usligi_img,
-    .uslugi-list-item:nth-child(2) .usligi_img{
+    .uslugi-list-item:nth-child(2) .usligi_img {
         top: 16px;
         left: 16px;
     }
 
-    .uslugi-list-item:nth-child(3) .usligi_img {
+    .uslugi-list-item:nth-child(3) .usligi_img,
+    .uslugi-list-item:nth-child(4) .usligi_img,
+    .uslugi-list-item:nth-child(5) .usligi_img {
         top: 22px;
         left: 16px;
     }
@@ -393,8 +413,44 @@
         left: 64px;
     }
 
-    .uslugi-list-item:nth-child(3) h3 {
+    .uslugi-list-item:nth-child(3) h3,
+    .uslugi-list-item:nth-child(4) h3,
+    .uslugi-list-item:nth-child(5) h3 {
         top: 17px;
+    }
+
+    .uslugi-list-item:nth-child(6) h3 {
+        position: absolute;
+        top: 32px;
+        left: 32px;
+    }
+
+    .uslugi-list-item:nth-child(6) p {
+        font-family: Raleway;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20.8px;
+        text-align: center;
+        position: absolute;
+        color: #141414;
+        top: 94px;
+        left: 40px;
+    }
+
+    .uslugi-list-item:nth-child(6) p:nth-child(2) {
+        top: 79px;
+    }
+
+    .uslugi-list-item:nth-child(6) p:nth-child(3) {
+        top: 112px;
+    }
+
+    .uslugi-list-item:nth-child(6) p:nth-child(4) {
+        top: 145px;
+    }
+
+    .uslugi-list-item:nth-child(6) p:nth-child(5) {
+        top: 178px;
     }
 
     .uslugi-list-item:nth-child(2) {
@@ -405,5 +461,20 @@
     .uslugi-list-item:nth-child(3) {
         position: absolute;
         top: 648px;
+    }
+
+    .uslugi-list-item:nth-child(4) {
+        position: absolute;
+        top: 968px;
+    }
+
+    .uslugi-list-item:nth-child(5) {
+        position: absolute;
+        top: 1296px;
+    }
+
+    .uslugi-list-item:nth-child(6) {
+        position: absolute;
+        top: 1616px;
     }
 }

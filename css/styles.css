@@ -478,6 +478,14 @@ header {
     box-shadow: 0px 1px 7.2px 0px #00000029;
 }
 
+.uslugi-list-item:nth-child(6) {
+    width: 298px;
+    height: 284px;
+    padding: 16px 16px 0px 16px;
+    background: #F5F5F5;
+    box-shadow: none;
+}
+
 .uslugi img {
     position: absolute;
     top: 35px;
@@ -491,7 +499,9 @@ header {
     color: #000000;
 }
 
-.uslugi-list-item:nth-child(3) .fa {
+.uslugi-list-item:nth-child(3) .fa,
+.uslugi-list-item:nth-child(4) .fa,
+.uslugi-list-item:nth-child(5) .fa {
     top: 28px;
 }
 
