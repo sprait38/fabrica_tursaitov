@@ -477,4 +477,193 @@
         position: absolute;
         top: 1616px;
     }
+
+    .portfolio {
+        position: absolute;
+        top: 4147px;
+        left: 15px;
+        right: 15px;
+    }
+
+    .portfolio_2 {
+        position: absolute;
+        top: 4834px;
+        left: 15px;
+        right: 15px;
+    }
+
+    .portfolio h2,
+    .portfolio_2 h2 {
+        position: absolute;
+        top: 14px;
+        font-family: Raleway;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 31.2px;
+    }
+
+    .portfolio div,
+    .portfolio_2 div {
+        position: absolute;
+        top: 0px;
+        left: 96px;
+    }
+
+    .portfolio p,
+    .portfolio_2 p {
+        position: absolute;
+        top: 82px;
+        width: 330px;
+    }
+
+    .portfolio .raboti,
+    .portfolio_2 .raboti_2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        top: 236px;
+        left: 0px;
+    }
+
+    .portfolio_2 .raboti_2 {
+        flex-direction: column;
+    }
+
+    .raboti span:nth-child(1),
+    .raboti_2 span:nth-child(1) {
+        font-family: Raleway;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+        color: #D13A1F;
+    }
+
+    .raboti span:nth-child(2) {
+        color: #14141466;
+        position: relative;
+        left: 35px;
+        font-family: Raleway;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .raboti_2 span {
+        color: #14141466;
+        position: relative;
+        left: 0px;
+        font-family: Raleway;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .raboti_2 span:nth-child(2) {
+        top: 24px;
+    }
+
+    .raboti_2 span:nth-child(3) {
+        top: 49px;
+    }
+
+    .raboti_2 span:nth-child(4) {
+        top: 23px;
+        left: 133px;
+    }
+
+    .raboti_2 span:nth-child(5) {
+        top: 47px;
+    }
+
+    .raboti img:nth-child(3) {
+        position: absolute;
+        top: 56px;
+        left: 0px;
+    }
+
+
+    .raboti_2 img:nth-child(6) {
+        position: absolute;
+        top: 208px;
+        left: 0px;
+    }
+
+    .raboti_2 img:nth-child(7) {
+        position: absolute;
+        top: 553px;
+        left: 0px;
+    }
+
+    .raboti_2 img:nth-child(8) {
+        position: absolute;
+        top: 899px;
+        left: 0px;
+    }
+
+    .raboti_2 img:nth-child(9) {
+        position: absolute;
+        top: 1245px;
+        left: 0px;
+    }
+
+    .raboti_2 img:nth-child(10) {
+        position: absolute;
+        top: 1591px;
+        left: 0px;
+    }
+
+    .raboti_2 img:nth-child(11) {
+        position: absolute;
+        top: 1937px;
+        left: 0px;
+    }
+
+    .raboti img:nth-child(4) {
+        position: absolute;
+        top: 56px;
+        left: 112px;
+    }
+
+    .raboti img:nth-child(5) {
+        position: absolute;
+        top: 56px;
+        left: 225px;
+    }
+
+    .raboti img:nth-child(6) {
+        position: absolute;
+        top: 168px;
+        left: 0px;
+    }
+
+    .raboti img:nth-child(7) {
+        position: absolute;
+        top: 221px;
+        left: 112px;
+    }
+
+    .raboti img:nth-child(8) {
+        position: absolute;
+        top: 168px;
+        left: 225px;
+    }
+
+    .raboti_a {
+        position: absolute;
+        left: 49px;
+        top: 347px;
+        width: 184px;
+        height: 21px;
+        padding: 12px 24px 12px 24px;
+        background: #D13A1F;
+        color: #fff;
+        font-family: Raleway;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20.8px;
+    }
+
+    .raboti_2 .raboti_a {
+        top: 2287px;
+    }
 }
