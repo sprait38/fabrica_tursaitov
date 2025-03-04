@@ -493,7 +493,8 @@
     }
 
     .portfolio h2,
-    .portfolio_2 h2 {
+    .portfolio_2 h2,
+    .plan h2 {
         position: absolute;
         top: 14px;
         font-family: Raleway;
@@ -665,5 +666,126 @@
 
     .raboti_2 .raboti_a {
         top: 2287px;
+    }
+
+    .plan {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        position: absolute;
+        top: 7448px;
+        left: 15px;
+        right: 15px;
+    }
+
+    .plan div:nth-child(1) {
+        position: absolute;
+        top: 33px;
+        left: 19px;
+    }
+
+    .plan div:nth-child(3) {
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        top: 116px;
+        left: 0px;
+    }
+
+    .plan_opesanie h3,
+    .opesanie{
+        width: 204px;
+    }
+
+    .plan_opesanie h3 {
+        font-family: Raleway;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 26px;
+        color: #141414;
+    }
+    
+    .opesanie {
+        position: absolute;
+        top: 61px;
+    }
+
+    .opesanie {
+        font-family: Raleway;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20.8px;
+        color: #141414;
+    }
+
+    .cena {
+        font-family: Raleway;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 26px;
+        color: #D13A1F;
+    }
+
+    .cena {
+        position: absolute;
+        width: 100%;
+        left: 214px;
+        top: 0;
+    }
+
+    .tochki {
+        position: absolute;
+        border-width: 4px;
+        border-color: black;
+        border-style: dotted;
+        width: 300px;
+        height: 0px;
+        top: 174px;
+    }
+
+    .plan div:nth-child(4) {
+        position: absolute;
+        top: 333px;
+        left: 0px;
+    }
+    
+    .plan div:nth-child(4) .cena{
+        left: 209px;
+    }
+
+    .plan div:nth-child(5) {
+        position: absolute;
+        top: 551px;
+        left: 0px;
+    }
+
+    .plan div:nth-child(5) .tochki{
+        top: 150px;
+    }
+
+    .plan div:nth-child(6) {
+        position: absolute;
+        top: 743px;
+        left: 0px;
+    }
+
+    .plan div:nth-child(6) .tochki{
+        top: 150px;
+    }
+
+    .plan div:nth-child(7) {
+        position: absolute;
+        top: 939px;
+        left: 0px;
+    }
+
+    .plan div:nth-child(7) .tochki{
+        top: 171px;
+    }
+
+    .plan div:nth-child(8) {
+        position: absolute;
+        top: 1155px;
+        left: 0px;
     }
 }
