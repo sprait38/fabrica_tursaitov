@@ -2,20 +2,20 @@ let headermenu = document.querySelector('.header-menu');
 let menu = document.querySelector('.header-nav');
 let menulinks = menu.querySelectorAll('.header-link');
 headermenu.addEventListener('click',
-    function() {
+    function () {
         headermenu.classList.toggle('header-menu--active');
         menu.classList.toggle('header-nav--active');
         document.body.classList.toggle('stop-scroll');
     })
-menulinks.forEach(function(el) {
-    el.addEventListener('click', function() {
+menulinks.forEach(function (el) {
+    el.addEventListener('click', function () {
         headermenu.classList.remove('header-menu--active');
         menu.classList.remove('header-nav--active');
         document.body.classList.remove('stop-scroll');
     })
 });
 
-var swiper2 = new Swiper('.mySwiper', {
+var swiper1 = new Swiper('.mySwiper', {
     breakpoints: {
         360: {
             slidesPerView: 1,
@@ -38,12 +38,40 @@ var swiper2 = new Swiper('.mySwiper', {
     loop: true,
     allowTouchMove: false,
     pagination: {
-        el: '.swiper-pagination',
+        el: '.swiper-pagination1',
         clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-     
+    },
+    navigation: {
+        nextEl: '.swiper-button-next1',
+        prevEl: '.swiper-button-prev1',
+    },
+
+});
+
+var swiper2 = new Swiper('.offis', {
+    breakpoints: {
+        320: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        },
+        1019: {
+            slidesPerView: 2,
+            spaceBetween: 0,
+            allowSlideNext: true,
+            allowSlidePrev: true,
+        },
+        1339: {
+            slidesPerView: 0,
+            spaceBetween: 31,
+        }
+    },
+    freeMode: true,
+    mousewheel: true,
+    keyboard: true,
+    loop: true,
+    allowTouchMove: false,
+    navigation: {
+        nextEl: ".swiper-button-next2",
+        prevEl: ".swiper-button-prev2",
+    },
 });
