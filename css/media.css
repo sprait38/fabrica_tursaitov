@@ -1,6 +1,6 @@
 @media (max-width: 360px) {
     .container {
-        padding: 0 50px;
+        width: 360px;
     }
 
     .header-menu {
@@ -161,7 +161,7 @@
     .mySwiper,
     .swiper-wrapper {
         position: absolute;
-        width: 360px;
+        width: 330px;
         height: 231px;
         top: 25px;
         left: 8px;
@@ -177,7 +177,7 @@
     .mySwiper:nth-child(2) .swiper-pagination1 {
         position: absolute;
         top: 243px;
-        left: 143;
+        left: 143px;
         z-index: 1;
     }
 
@@ -866,7 +866,8 @@
         left: 0px;
     }
 
-    .offis {
+    .offis,
+    .offis_swiper-wrapper {
         position: absolute;
         width: 330px;
         height: 100px;
@@ -874,13 +875,6 @@
         left: 0px;
         right: 0;
         bottom: 0;
-    }
-
-    .offis_swiper-wrapper {
-        width: 330px;
-        height: 100px;
-        left: 0;
-        top: 0;
     }
 
     .offis_swiper-slide img {
@@ -917,6 +911,79 @@
     .swiper-button-next::after,
     .swiper-button-prev::after {
         content: "";
+    }
+
+    .form {
+        top: 9489px;
+        height: 394px;
+    }
+
+    .container_form {
+        position: absolute;
+        top: 0;
+        left: 15px;
+        right: 15px;
+        width: 330px;
+    }
+
+
+    .form h3 {
+        position: absolute;
+        top: 47px;
+        font-family: Raleway;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 130%;
+        color: #FFFFFF;
+    }
+
+    .form p {
+        position: absolute;
+        top: 86px;
+        width: 330px;
+        font-family: Ubuntu Sans;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        color: #FFFFFF;
+    }
+
+    .form input {
+        position: relative;
+        top: 173px;
+        width: 298px;
+        height: 34px;
+        margin-bottom: 14px;
+        padding: 8px 16px 8px 16px;
+        background: #FFFFFF;
+        border: none;
+        z-index: 1;
+    }
+
+    input[type="text"],
+    input[type="tel"] {
+        font-family: Raleway;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        color: #494949;
+    }
+
+    input[type="button"] {
+        font-family: Ubuntu Sans;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 130%;
+        color: #D13A1F;
+    }
+
+    input:nth-child(5) {
+        width: 132px;
+        height: 45px;
+        padding: 12px 24px 12px 24px;
+        border-width: 1px;
+        background: #FFFFFF;
+        border: 1px solid #D13A1F
     }
 
 }

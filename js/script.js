@@ -19,7 +19,7 @@ var swiper1 = new Swiper('.mySwiper', {
     breakpoints: {
         360: {
             slidesPerView: 1,
-            spaceBetween: 0,
+            spaceBetween: 20,
         },
         1019: {
             slidesPerView: 2,
@@ -32,6 +32,7 @@ var swiper1 = new Swiper('.mySwiper', {
             spaceBetween: 0,
         }
     },
+    watchSlidesProgress: true,
     freeMode: true,
     mousewheel: true,
     keyboard: true,
@@ -56,7 +57,7 @@ var swiper2 = new Swiper('.offis', {
         },
         1019: {
             slidesPerView: 2,
-            spaceBetween: 0,
+            spaceBetween: 30,
             allowSlideNext: true,
             allowSlidePrev: true,
         },

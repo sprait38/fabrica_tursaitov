@@ -435,7 +435,8 @@ header {
 }
 
 .turnir-list-item span,
-.portfolio p, .portfolio_2 p {
+.portfolio p,
+.portfolio_2 p {
     font-family: Raleway;
     font-weight: 400;
     font-size: 16px;
@@ -510,4 +511,12 @@ header {
 
 .uslugi-list-item:nth-child(3) img {
     top: 85px;
+}
+
+.form {
+    position: absolute;
+    top: 145px;
+    background: #D13A1F;
+    height: 100%;
+    width: 100%;
 }
