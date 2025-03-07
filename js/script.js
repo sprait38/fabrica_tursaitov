@@ -76,3 +76,32 @@ var swiper2 = new Swiper('.offis', {
         prevEl: ".swiper-button-prev2",
     },
 });
+
+
+var swiper2 = new Swiper('.portner', {
+    breakpoints: {
+        320: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+        1019: {
+            slidesPerView: 6,
+            spaceBetween: 30,
+            allowSlideNext: true,
+            allowSlidePrev: true,
+        },
+        1339: {
+            slidesPerView: 8,
+            spaceBetween: 31,
+        }
+    },
+    freeMode: true,
+    mousewheel: true,
+    keyboard: true,
+    loop: true,
+    allowTouchMove: false,
+    navigation: {
+        nextEl: ".swiper-button-next4",
+        prevEl: ".swiper-button-prev4",
+    },
+});
