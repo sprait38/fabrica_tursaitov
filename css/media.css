@@ -170,7 +170,9 @@
     }
 
     .swiper-button-next1,
-    .swiper-button-prev1 {
+    .swiper-button-prev1,
+    .swiper-button-next4,
+    .swiper-button-prev4 {
         display: none;
     }
 
@@ -502,7 +504,9 @@
     .plan h2,
     .office_clients h2,
     .otzivi h2,
-    .portner h2 {
+    .portner h2,
+    .novosti h2,
+    .seminar h2 {
         position: absolute;
         top: 14px;
         font-family: Raleway;
@@ -994,7 +998,9 @@
     }
 
     .container_otzivi,
-    .container_portner {
+    .container_portner,
+    .container_novosti,
+    .container_seminar {
         width: 330px;
         margin: 0 auto;
     }
@@ -1086,22 +1092,237 @@
         left: 20px;
     }
 
-    .container_portner div {
+    .container_portner .razrabotka_img,
+    .container_seminar .razrabotka_img {
         position: absolute;
         top: 0px;
         left: 100px;
     }
-    .container_portner div:nth-child(3) {
-        position: absolute;
-        top: 81px;
-        left: 0;
-    }
 
-    .portner_img{
+    .portner_img {
         position: absolute;
-        top: 45px;
+        top: 80px;
         width: 320px;
         height: 30px;
+    }
+
+    .swiper_portner,
+    .portner_wrapper {
+        position: absolute;
+        width: 320px;
+        height: 32px;
+        padding: 32px 20px 32px 20px;
+        top: 0px;
+        left: 0px;
+        right: 0;
+        bottom: 0;
+    }
+
+    .portner_slide {
+        width: auto !important;
+    }
+
+    .novosti {
+        position: absolute;
+        top: 10993px;
+    }
+
+    .container_novosti .razrabotka_img {
+        position: absolute;
+        top: 0px;
+        left: 181px;
+    }
+
+    .novosti_list {
+        position: absolute;
+        top: 100px;
+    }
+
+    .novosti-list-item {
+        position: absolute;
+        top: 0;
+    }
+
+    .novosti-list-item:nth-child(2) {
+        top: 230px;
+    }
+
+    .novosti-list-item:nth-child(3) {
+        top: 460px;
+    }
+
+    .novosti-list-item:nth-child(4) {
+        top: 690px;
+    }
+
+    .novosti_h3 {
+        position: absolute;
+        top: 1px;
+        left: 97px;
+        width: 233px;
+        font-family: Raleway;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 130%;
+        color: #000000;
+    }
+
+    .novosti_p {
+        position: absolute;
+        top: 36px;
+        left: 97px;
+        width: 233px;
+        font-family: Raleway;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        color: #141414;
+    }
+
+    .novosti_a {
+        position: absolute;
+        top: 1032px;
+        left: 19px;
+        font-family: Ubuntu Sans;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 130%;
+        color: #494949;
+    }
+
+    .novosti_p span {
+        text-transform: uppercase;
+    }
+
+    .seminar {
+        position: absolute;
+        top: 12113px;
+    }
+
+    .swiper_seminar {
+        position: absolute;
+        top: 55px;
+        left: 7px;
+    }
+
+    .seminar_slide h3 {
+        position: absolute;
+        top: 237px;
+        left: 15px;
+        font-family: Raleway;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 130%;
+        color: #141414;
+    }
+
+    .seminar_slide  p:nth-child(5) {
+        position: absolute;
+        top: 272px;
+        left: 15px;
+        font-family: Raleway;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        color: #141414;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 125px;
+        width: 298px !important;
+    }
+
+    .seminar_slide p:nth-child(6){
+        position: absolute;
+        top: 430px;
+        height: 850px;
+    }
+
+    .Rectangle {
+        position: absolute;
+        top: 212px;
+        width: 330px;
+        height: 8px;
+        background: #D13A1F;
+    }
+
+    .swiper_seminar .seminar_wrapper {
+        height: 790px;
+    }
+
+    .seminar_slide {
+        height: 430px;
+        overflow: hidden;
+        width: 330px !important;
+    }
+
+    .seminar_slide .bottom {
+        position: absolute;
+        top: 403px;
+        bottom: 0;
+        background: linear-gradient(
+          to bottom,
+          rgba(255, 255, 255, 0),
+          rgba(255, 255, 255, 1) 80%
+        );
+        width: 100%;
+        height: 35px;
+        opacity: 1;
+        transition: 0.3s;
+    }
+
+    .read-more-checker {
+        opacity: 0;
+        position: absolute;
+        top: 222px;
+        left: 15px;
+
+    }
+
+    .read-more-button {
+        position: absolute;
+        top: 400px;
+        left: 15px;
+        cursor: pointer;
+        display: inline-block;
+        padding: 10px;
+        color: #777;
+        border-radius: 4px;
+    }
+
+    .read-more-checker:checked~.seminar_slide {
+        height: none;
+    }
+
+    .read-more-checker:checked~.seminar_slide .bottom {
+        opacity: 0;
+        transition: 0.3s;
+    }
+
+    .read-more-checker~.read-more-button:before {
+        content: "Подробнее";
+    }
+
+    .read-more-checker:checked~.read-more-button:before {
+        content: "Скрыть";
+    }
+
+    .swiper-button-next5 {
+        position: absolute;
+        top: 36px;
+        left: 313px;
+    }
+
+    .swiper-button-prev5 {
+        position: absolute;
+        top: 36px;
+        left: 249px;
+    }
+
+    .swiper-pagination5 {
+        position: absolute;
+        top: 558px;
+        left: 150px !important;
     }
 
 

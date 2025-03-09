@@ -78,11 +78,11 @@ var swiper2 = new Swiper('.offis', {
 });
 
 
-var swiper2 = new Swiper('.portner', {
+var swiper3 = new Swiper('.swiper_portner', {
     breakpoints: {
         320: {
             slidesPerView: 3,
-            spaceBetween: 30,
+            spaceBetween: 40,
         },
         1019: {
             slidesPerView: 6,
@@ -103,5 +103,37 @@ var swiper2 = new Swiper('.portner', {
     navigation: {
         nextEl: ".swiper-button-next4",
         prevEl: ".swiper-button-prev4",
+    },
+});
+
+var swiper3 = new Swiper('.swiper_seminar', {
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+        },
+        1019: {
+            slidesPerView: 6,
+            spaceBetween: 30,
+            allowSlideNext: true,
+            allowSlidePrev: true,
+        },
+        1339: {
+            slidesPerView: 8,
+            spaceBetween: 31,
+        }
+    },
+    freeMode: true,
+    mousewheel: true,
+    keyboard: true,
+    loop: true,
+    allowTouchMove: false,
+    pagination: {
+        el: '.swiper-pagination5',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next5",
+        prevEl: ".swiper-button-prev5",
     },
 });
