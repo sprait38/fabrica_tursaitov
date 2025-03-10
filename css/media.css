@@ -162,7 +162,7 @@
     .swiper-wrapper {
         position: absolute;
         width: 330px;
-        min-height: 231px;
+        max-height: 231px;
         top: 25px;
         left: 8px;
         right: 0;
@@ -1205,19 +1205,16 @@
         left: 7px;
     }
 
-    .seminar_wrapper {
-        position: relative;
-        min-height: 450px;
-    }
-
     .seminar_slide {
+       /* display: flex;
+        flex-direction: column;*/
         width: 330px !important;
-        min-height: 130px;
+        max-height: 450px;
     }
 
     .seminar_slide h3 {
         position: absolute;
-        top: 237px;
+        top: 236px;
         left: 15px;
         font-family: Raleway;
         font-weight: 700;
@@ -1227,8 +1224,8 @@
     }
 
     .seminar_slide p {
-        position: absolute;
-        top: 272px;
+        position:relative;
+        top: 60px;
         left: 15px;
         font-family: Raleway;
         font-weight: 400;
@@ -1236,17 +1233,16 @@
         line-height: 130%;
         color: #141414;
         width: 298px !important;
-        min-height: 130px;
     }
 
     #more {
         display: none;
     }
 
-    #btn {
-        position: absolute;
-        top: 405px;
-        left: 15px;
+    #btn, #btn_2, #btn_3 {
+        position: relative;
+        top: 74px;
+        left: 16px;
         bottom: 0px;
         width: 115px;
         height: 40px;
@@ -1255,6 +1251,14 @@
         padding: 12px 4px 2px 4px;
         border-bottom: 1px solid #141414;
         
+    }
+
+    .seminar_slide button {
+        font-family: Ubuntu Sans;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 130%;        
+        color:#141414;
     }
 
     .Rectangle {
@@ -1282,7 +1286,5 @@
         top: 558px;
         left: 150px !important;
     }
-
-
 
 }

@@ -106,20 +106,20 @@ var swiper3 = new Swiper('.swiper_portner', {
     },
 });
 
-var swiper3 = new Swiper('.swiper_seminar', {
+var swiper4 = new Swiper('.swiper_seminar', {
     breakpoints: {
         320: {
             slidesPerView: 1,
-            spaceBetween: 0,
+            spaceBetween: 20,
         },
         1019: {
-            slidesPerView: 6,
+            slidesPerView: 3,
             spaceBetween: 30,
             allowSlideNext: true,
             allowSlidePrev: true,
         },
         1339: {
-            slidesPerView: 8,
+            slidesPerView: 3,
             spaceBetween: 31,
         }
     },
@@ -137,7 +137,6 @@ var swiper3 = new Swiper('.swiper_seminar', {
         prevEl: ".swiper-button-prev5",
     },
 });
-
 
 
 function showMore() {
