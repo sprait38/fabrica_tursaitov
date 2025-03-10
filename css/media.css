@@ -162,7 +162,7 @@
     .swiper-wrapper {
         position: absolute;
         width: 330px;
-        height: 231px;
+        min-height: 231px;
         top: 25px;
         left: 8px;
         right: 0;
@@ -1195,14 +1195,24 @@
     }
 
     .seminar {
-        position: absolute;
-        top: 12113px;
+        position: relative;
+        top: 12057px;
     }
 
     .swiper_seminar {
         position: absolute;
         top: 55px;
         left: 7px;
+    }
+
+    .seminar_wrapper {
+        position: relative;
+        min-height: 450px;
+    }
+
+    .seminar_slide {
+        width: 330px !important;
+        min-height: 130px;
     }
 
     .seminar_slide h3 {
@@ -1216,7 +1226,7 @@
         color: #141414;
     }
 
-    .seminar_slide  p:nth-child(5) {
+    .seminar_slide p {
         position: absolute;
         top: 272px;
         left: 15px;
@@ -1225,17 +1235,26 @@
         font-size: 16px;
         line-height: 130%;
         color: #141414;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        height: 125px;
         width: 298px !important;
+        min-height: 130px;
     }
 
-    .seminar_slide p:nth-child(6){
+    #more {
+        display: none;
+    }
+
+    #btn {
         position: absolute;
-        top: 430px;
-        height: 850px;
+        top: 405px;
+        left: 15px;
+        bottom: 0px;
+        width: 115px;
+        height: 40px;
+        border: none;
+        background: transparent;
+        padding: 12px 4px 2px 4px;
+        border-bottom: 1px solid #141414;
+        
     }
 
     .Rectangle {
@@ -1244,67 +1263,6 @@
         width: 330px;
         height: 8px;
         background: #D13A1F;
-    }
-
-    .swiper_seminar .seminar_wrapper {
-        height: 790px;
-    }
-
-    .seminar_slide {
-        height: 430px;
-        overflow: hidden;
-        width: 330px !important;
-    }
-
-    .seminar_slide .bottom {
-        position: absolute;
-        top: 403px;
-        bottom: 0;
-        background: linear-gradient(
-          to bottom,
-          rgba(255, 255, 255, 0),
-          rgba(255, 255, 255, 1) 80%
-        );
-        width: 100%;
-        height: 35px;
-        opacity: 1;
-        transition: 0.3s;
-    }
-
-    .read-more-checker {
-        opacity: 0;
-        position: absolute;
-        top: 222px;
-        left: 15px;
-
-    }
-
-    .read-more-button {
-        position: absolute;
-        top: 400px;
-        left: 15px;
-        cursor: pointer;
-        display: inline-block;
-        padding: 10px;
-        color: #777;
-        border-radius: 4px;
-    }
-
-    .read-more-checker:checked~.seminar_slide {
-        height: none;
-    }
-
-    .read-more-checker:checked~.seminar_slide .bottom {
-        opacity: 0;
-        transition: 0.3s;
-    }
-
-    .read-more-checker~.read-more-button:before {
-        content: "Подробнее";
-    }
-
-    .read-more-checker:checked~.read-more-button:before {
-        content: "Скрыть";
     }
 
     .swiper-button-next5 {
@@ -1324,6 +1282,7 @@
         top: 558px;
         left: 150px !important;
     }
+
 
 
 }

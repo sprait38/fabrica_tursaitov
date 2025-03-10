@@ -137,3 +137,21 @@ var swiper3 = new Swiper('.swiper_seminar', {
         prevEl: ".swiper-button-prev5",
     },
 });
+
+
+
+function showMore() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("btn");
+    if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Подробнее";
+        moreText.style.display = "none";
+    }
+    else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Меньше";
+        moreText.style.display = "inline";
+    }
+}
