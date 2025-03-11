@@ -137,28 +137,3 @@ var swiper4 = new Swiper('.swiper_seminar', {
         prevEl: ".swiper-button-prev5",
     },
 });
-
-
-function showMore() {
-    var dots = document.getElementById("dots");
-    var moreText = document.getElementById("more");
-    var btnText = document.getElementById("btn");
-    if (dots.style.display === "none") {
-        dots.style.display = "inline";
-        btnText.innerHTML = "Подробнее";
-        moreText.style.display = "none";
-    }
-    else {
-        dots.style.display = "none";
-        btnText.innerHTML = "Меньше";
-        moreText.style.display = "inline";
-    }
-}
-
-document.addEventListener('click', ({target}) => {
-    if(target.closest('.btn')){
-    const prev = target.previousElementSibling;
-    prev.classList.toggle('more'),
-    prev.classList.toggle('dots')
-    }
-    });
