@@ -154,3 +154,11 @@ function showMore() {
         moreText.style.display = "inline";
     }
 }
+
+document.addEventListener('click', ({target}) => {
+    if(target.closest('.btn')){
+    const prev = target.previousElementSibling;
+    prev.classList.toggle('more'),
+    prev.classList.toggle('dots')
+    }
+    });
