@@ -506,7 +506,8 @@
     .otzivi h2,
     .portner h2,
     .novosti h2,
-    .seminar h2 {
+    .seminar h2,
+    .container_Partners h2 {
         position: absolute;
         top: 14px;
         font-family: Raleway;
@@ -954,7 +955,7 @@
         color: #FFFFFF;
     }
 
-    .form input {
+    .form input, .container_Partners input {
         position: relative;
         top: 173px;
         width: 298px;
@@ -967,7 +968,7 @@
     }
 
     input[type="text"],
-    input[type="tel"] {
+    input[type="tel"], input[type="email"] {
         font-family: Raleway;
         font-weight: 400;
         font-size: 16px;
@@ -1000,7 +1001,8 @@
     .container_otzivi,
     .container_portner,
     .container_novosti,
-    .container_seminar {
+    .container_seminar,
+    .container_Partners {
         width: 330px;
         margin: 0 auto;
     }
@@ -1212,8 +1214,8 @@
 
     .seminar_slide h3 {
         position: absolute;
-        top: 236px;
-        left: 15px;
+        top: 237px;
+        left: 16px;
         font-family: Raleway;
         font-weight: 700;
         font-size: 20px;
@@ -1235,7 +1237,7 @@
 
     .btn {
         position: relative;
-        top: 53px;
+        top: 63px;
         left: 16px;
         bottom: 0px;
         width: 115px;
@@ -1244,7 +1246,10 @@
         background: transparent;
         padding: 12px 4px 2px 4px;
         border-bottom: 1px solid #141414;
+    }
 
+    .more {
+        display: none;
     }
 
     .seminar_slide button {
@@ -1281,26 +1286,75 @@
         left: 150px !important;
     }
 
-    /* Ограничиваем ширину и сохраняем переносы строк */
-    #textParagraph_p1 {
-        width: 300px;         /* При необходимости меняйте ширину */
-        white-space: pre-line;/* Сохраняет переносы строк в тексте */
-        overflow: hidden;     /* Скрывает "лишний" текст (если он не помещается) */
-        text-overflow: ellipsis;
-        text-align: left;
-        margin: 0;            
-        padding: 0;
-      }
-      /* Стили для кнопки по желанию */
-      #changeLength_p1 {
-        margin: 0;
-        width: 115px;
-        height: 40px;
-        border: none;
-        background: transparent;
-        padding: 12px 4px 2px 4px; /* Небольшие отступы кнопки */
-        border-bottom: 1px solid #141414;
-        /* margin-left: 10px;  небольшой отступ от текста */
-      }
+    .Partners {
+        position: relative;
+        top: 12649px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 360px;
+        min-height: 439px;
+        background: #248C73;
+    }
 
+    .container_Partners h2{
+        top: 30px;
+        left: 15px;
+        color: #FFFFFF;
+    }
+
+    .container_Partners input:nth-child(6) {
+        position: relative;
+        top: 122px;
+        width: 134px;
+        height: 45px;
+        padding: 12px 24px 12px 24px;
+        border-width: 1px;
+        color: #FFFFFF;
+        background: #D13A1F;
+        border: 1px solid #D13A1F
+    }
+
+    .container_Partners input, .select-wrapper {
+        position: relative;
+        top: 108px;
+    }
+
+    .select-wrapper::after {
+        content: "";
+        position: absolute;
+        top: calc(46% - 4px);
+        right: 22px;
+        width: 18.6px;
+        height: 10.6px;      
+        background-image: url(../img/arrow-down.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
+
+    .select-single {
+        padding: 10px 15px;
+    }
+
+    .select:disabled {
+        cursor: not-allowed;
+    }
+
+    .select {
+        position: relative;
+        width: 330px;
+        background-color: #ffffff;
+        color: #141414;
+        height: 50px;
+        padding: 8px 16px 8px 16px;
+        border-bottom-width: 1px;
+        cursor: pointer;
+        -webkit-appearance: none;
+        appearance: none;
+        font-family: Raleway;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+    }
 }

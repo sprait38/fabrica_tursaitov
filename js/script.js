@@ -137,3 +137,24 @@ var swiper4 = new Swiper('.swiper_seminar', {
         prevEl: ".swiper-button-prev5",
     },
 });
+
+
+let btns = document.querySelectorAll('.btn');
+for (btn of btns) {
+  btn.addEventListener('click', function() {
+
+    let seminar_slide = this.closest('.seminar_slide')
+    let dots = seminar_slide.querySelector('.dots');
+    let more = seminar_slide.querySelector('.more');
+
+    if(dots.style.display === 'none') {
+      dots.style.display = 'inline';
+      more.style.display = 'none';
+      this.textContent = 'Подробнее';
+    } else {
+      dots.style.display = 'none';
+      more.style.display = 'inline';
+      this.textContent = 'Скрыть';
+    }
+  });
+}
