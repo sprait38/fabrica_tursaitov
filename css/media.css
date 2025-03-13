@@ -507,7 +507,8 @@
     .portner h2,
     .novosti h2,
     .seminar h2,
-    .container_Partners h2 {
+    .container_Partners h2,
+    .faq-title {
         position: absolute;
         top: 14px;
         font-family: Raleway;
@@ -955,7 +956,8 @@
         color: #FFFFFF;
     }
 
-    .form input, .container_Partners input {
+    .form input,
+    .container_Partners input {
         position: relative;
         top: 173px;
         width: 298px;
@@ -968,7 +970,8 @@
     }
 
     input[type="text"],
-    input[type="tel"], input[type="email"] {
+    input[type="tel"],
+    input[type="email"] {
         font-family: Raleway;
         font-weight: 400;
         font-size: 16px;
@@ -1297,7 +1300,7 @@
         background: #248C73;
     }
 
-    .container_Partners h2{
+    .container_Partners h2 {
         top: 30px;
         left: 15px;
         color: #FFFFFF;
@@ -1315,7 +1318,8 @@
         border: 1px solid #D13A1F
     }
 
-    .container_Partners input, .select-wrapper {
+    .container_Partners input,
+    .select-wrapper {
         position: relative;
         top: 108px;
     }
@@ -1326,7 +1330,7 @@
         top: calc(46% - 4px);
         right: 22px;
         width: 18.6px;
-        height: 10.6px;      
+        height: 10.6px;
         background-image: url(../img/arrow-down.svg);
         background-repeat: no-repeat;
         background-position: center;
@@ -1356,5 +1360,25 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 130%;
+    }
+
+    .faq {
+        position: relative;
+        top: 12699px;
+    }
+
+    .faq-container {
+        width: 330px;
+    }
+
+    .faq-container .razrabotka_img{
+        position: absolute;
+        top: 10px;
+        left: 177px;
+    }
+
+    .accordion-list{
+        position: absolute;
+        top: 89px;
     }
 }

@@ -158,3 +158,10 @@ for (btn of btns) {
     }
   });
 }
+
+new Accordion(".accordion-list", {
+    elementClass: "accordion",
+    triggerClass: "faq__btn",
+    panelClass: "accordion__content",
+    activeClass: "accordion--active",
+  });

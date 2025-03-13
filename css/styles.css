@@ -525,3 +525,138 @@ header {
     padding: 32px 20px 32px 20px;
     background: #F5F5F5;
 }
+
+.faq {
+    padding-top: 50px;
+    padding-bottom: 97px;
+    margin-left: 16px;
+}
+
+.faq-title {
+    margin: 0;
+    margin-top: 11px;
+    margin-bottom: 34px;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 59px;
+    color: #000000;
+}
+
+.faq_item .accordion__content {
+    border: none;
+}
+
+.accordion__content {
+    overflow: hidden;
+    visibility: hidden;
+    transition-property: height, visability;
+    transition-timing-function: ease;
+}
+
+.accordion--active .accordion__content {
+    visibility: visible;
+}
+
+.faq__item {
+    margin-top: -1px;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid #cacaca;
+    transition: border 0.3s ease-in-out;
+}
+
+.faq__item:first-child {
+    margin-top: 0;
+    border-top: 1px solid #cacaca;
+}
+
+.faq__item:focus {
+    border-top: 1px solid #CCCCD4;
+    border-bottom: 1px solid #CCCCD4;
+}
+
+.faq__item:focus .faq__btn__text {
+    color: #f90;
+}
+
+.faq__item:focus .faq_icon {
+    background-color: #f90;
+}
+
+.faq__item:focus .faq_icon::before,
+.faq__item:focus .faq_icon::after {
+    background-color: #fff;
+}
+
+.faq__item:hover {
+    border-top: 1px solid #CCCCD4;
+    border-bottom: 1px solid #CCCCD4;
+}
+
+.faq__item:hover .faq__btn__text {
+    color: #282828;
+}
+
+.faq__item:hover .faq_icon {
+    background-color: transparent;
+}
+
+.faq__item:hover .faq_icon::before,
+.faq__item:hover .faq_icon::after {
+    background-color: #fff;
+}
+
+.faq__item:active .faq_icon {
+    transform: rotate(45deg);
+}
+
+.faq__btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 0;
+    cursor: pointer;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 0;
+    cursor: pointer;
+}
+
+.faq__btn__text {
+    text-align: left;
+    margin: 0;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    color: #282828;
+    transition: color .3s ease-in-out;
+}
+
+.faq_icon {
+    position: relative;
+    display: block;
+    border-radius: 100%;
+    width: 32px;
+    height: 32px;
+    background-image: url(../img/vopros_otvet/Right.svg);
+    background-repeat: no-repeat;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.faq_icon::before {
+    content: "";
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.faq_icon::after {
+    content: "";
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
